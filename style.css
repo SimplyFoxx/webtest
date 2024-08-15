@@ -1,8 +1,3 @@
-body{
-  background-image: url(/img/kiryu.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 nav.navbar ul li a {
   --height: 2.5rem;
   text-decoration: none;
@@ -61,7 +56,8 @@ nav.dropdown {
     width: var(--size);
     height: var(--size);
     justify-content: right;
-    filter: invert(100%)
+    position: absolute;
+    margin-right: 1.5rem;
   }
 
   div.dropdown-items {
@@ -70,6 +66,7 @@ nav.dropdown {
     margin: 0;
     position: absolute;
     right: 2rem;
+    z-index: 1
   }
 
   div.dropdown-items ul {
@@ -107,4 +104,30 @@ nav.dropdown {
   nav.dropdown div.dropdown-items:hover {
     display: flex;
   }
+}
+
+
+div.slideshow{
+  background-color: red;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  top: 2rem;
+  width: 90vw;
+  height: 50vh;
+  gap: 65vw;
+}
+div.slideshow button{
+  height: 8vh;
+  width: 8vh;
+  margin: 0;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.500);
+  border: none;
+}
+div.slideshow button:active{
+  background-color: rgba(255,255,255,0.650);
+  
 }
